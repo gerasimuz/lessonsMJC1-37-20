@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("hello");
         System.out.println("byte min " + Byte.MIN_VALUE + " max " + Byte.MAX_VALUE);
         byte b = 127; // -128...127
         Byte bR = Byte.MIN_VALUE; //-128...127
