@@ -5,10 +5,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hello");
         System.out.println("byte min " + Byte.MIN_VALUE + " max " + Byte.MAX_VALUE);
         byte b = 127; // -128...127
         Byte bR = Byte.MIN_VALUE; //-128...127
+
+        double dob = 1233123.123123;
+        Double Dob = 6565156.31351;
+        System.out.println((dob) + " " + (Dob));
 
         long l = 0;
         Long lR = 0L;
