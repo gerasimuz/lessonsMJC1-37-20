@@ -19,8 +19,17 @@ public class Main {
 //         System.out.println(k);
 
          //из String  Integer
-         String s = "123123";
-         Integer ing Integer.parseInt (s);
+//         String s = "123123";
+//         Integer ing Integer.parseInt (s);
+
+         String sds= "15654";
+         int sdf = Integer.parseInt(sds);
+
+         Integer k = 1651;
+         String ll = k.toString();
+         //так писать не можем
+         //int kk = 1566;
+         //String kkk = toString(kk);
 
 
     }
