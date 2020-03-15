@@ -1,11 +1,14 @@
 package edu.academy;
 
 public class Man {
-    int hairLength =0;
-//переменная обьявлена в классе. она является глобальной, на нее ссылаются другие классы. она будет
-    //создана в куче. поэтому она инициилизировалась сама. локальные переменные в методе нужно
-    //инициилизировать самому вручную.
-    public void grow(){
-        hairLength = hairLength + 1;
+
+    public void set hairLenght (int hairLenght){
+        this.hairLenght = hairLenght;
+
     }
+    public int get hairLenght (){
+        return hairLenght;
+    }
+
+
 }
