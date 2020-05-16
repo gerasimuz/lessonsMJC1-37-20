@@ -23,18 +23,18 @@ public class WarAndPiece {
         String[] words = textMy.toLowerCase().replace(",", "").replace(".", "").replace("--", "").split("\\s*(\\s|,|!|\\.)\\s*");
 
         //наш искомый шаблон для поиска -
-        Pattern pattern = Pattern.compile("мир");
-        int kk=0;
+        Pattern pattern = Pattern.compile("((М|м)ир)|((В|в)ойна)");
+        int count=0;
         for (String w : words) {
 
             Matcher matcher = pattern.matcher(w);
             boolean matches = matcher.find();
 
             if (matches) {
-                kk++;
+                count++;
             }
 
         }
-        System.out.println("Искомый запрос \"" + pattern.toString() + "\" встречается " + kk + " раз");
+        System.out.println("Искомый запрос \"" + pattern.toString() + "\" встречается " + count + " раз");
     }
 }
