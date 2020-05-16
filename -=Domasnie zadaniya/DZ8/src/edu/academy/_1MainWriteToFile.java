@@ -10,7 +10,7 @@ public class _1MainWriteToFile {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src//edu//academy//students.bin"))){
             for (int i = 0; i < 1000 ; i++) {//уменьшил до 1000 для меньшего размера на гит
                 Student s = new Student();
-                oos.writeObject(s);
+                    oos.writeObject(s);
 
             }
         } catch (IOException e) {
